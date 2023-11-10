@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int count = 0,i,n,ctr=0;
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+      scanf("%d",&n);  
+      int a[n];
+       for( i =0;i<n;i++) 
+        {   
+             scanf("%d",&a[i]);  
+        }
+             for(i =0;i<n;i++) 
+              { 
+                   ctr=0;
+              
+             for (int j = 0;j<n;j++) 
+             {      
+              { 
+                      if(i!=j && a[i]==a[j]) 
+                       { 
+                            ctr++;
+                       }
+              } 
+                
+                    
+                    } 
+        
+                    if(ctr==0) 
+                     { 
+                          printf("%d ",a[i]);
+                     }
+                  
+        }
+    
+        
+        
+        
+ return 0;
+}
