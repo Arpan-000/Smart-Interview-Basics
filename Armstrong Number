@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,sum=0,rem; 
+    scanf("%d",&n);  
+    int temp = n;
+    while(temp>0) 
+     { 
+          rem = temp%10; 
+          sum = sum + (rem*rem*rem); 
+             temp/=10;
+     } 
+     if(sum==n) 
+      { 
+          printf("Yes");
+      } 
+      else 
+       printf("No");
+    return 0;
+}
